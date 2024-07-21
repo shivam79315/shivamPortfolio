@@ -1,0 +1,54 @@
+* {
+    font-family: "Orbitron", sans-serif;
+}
+
+.nav {
+    background-color: #00357B;
+    height:80px;
+    border-radius: 5px 0px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px 50px;
+    rotate: 0deg;
+}
+
+.title {
+    font-size: 1.6rem;
+    color:#fff;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    padding: 0px 20px;
+}
+
+.right {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.right .menuList {
+    display: flex;
+    list-style: none;
+    gap:20px;
+}
+
+.menuList li {
+    color:#fff;
+    font-size: 1.3rem;
+}
+
+.menuList li:hover {
+    color: #F6FB7A;
+    cursor: pointer;
+}
