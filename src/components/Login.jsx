@@ -11,7 +11,7 @@ const Login = () => {
 
  const handleChange = (e) => {
     const {name, value} = e.target;
-    setFormData({
+    setFormData({    
       ...formData,
       [name] : value
     }
@@ -35,7 +35,7 @@ const Login = () => {
   }
   catch(error) {
     console.log('Error is:',error) 
-  }
+  }  
  }
 
 
@@ -51,7 +51,7 @@ const Login = () => {
             <input type="password" placeholder='Enter your passsword here' name='password' value={formData.password} onChange={handleChange}/>
             <button type="submit">Submit</button>
         </form>
-
+     
         <div className={styles.output}>Your saved username is {formData.name} and your email is {formData.email}</div>
     </>
   )

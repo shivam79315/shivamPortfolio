@@ -1,1 +1,3 @@
-@import './componentStyles/nav.css' 
+@import './componentStyles/nav.css';
+@import './componentStyles/education.module.css';
+@import './componentStyles/introduction.module.css';

@@ -11,7 +11,7 @@ const Nav = () => {
         </div>
         <div className="right">
           <ul className="menuList">
-            <li>Home</li>
+            <li>Certificates</li>
             <li>Linkedin</li>
             <li>CV</li>
             <li>E-Mail</li>

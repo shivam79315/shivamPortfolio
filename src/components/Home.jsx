@@ -1,11 +1,12 @@
 import React from 'react'
 import Nav from './Nav'
-import Login from './Login'
+import Introduction from './Introduction'
 
 const Home = () => {
   return (
     <>
         <Nav />
+        <Introduction />
     </>
   )
 }

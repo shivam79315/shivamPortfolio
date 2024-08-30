@@ -8,6 +8,7 @@
     border-radius: 5px 0px 0px 50px;
     display: flex;
     justify-content: space-between;
+    min-width: 1192px;
 }
 
 .left {
@@ -44,8 +45,9 @@
 }
 
 .menuList li {
-    color:#fff;
-    font-size: 1.3rem;
+    color:#00ccff;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .menuList li:hover {
