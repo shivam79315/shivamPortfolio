@@ -4,11 +4,30 @@
     box-sizing: border-box;
 }
 
+.cgw_main_container {
+    display: none !important;
+}
+
+.cgw-ext {
+    display: none !important;
+}
+
+#cgw_action_btn {
+    display: none !important;
+}
+
+/* .skillsSection {
+    height: 1000px;
+    background: linear-gradient(90deg, #12100E, #2B4162);
+    background-repeat: no-repeat;
+} */
+
 .heading {
     color: #fff;
     font-size: 2rem;
     text-align: center;
-    padding: 30px 0px 15px 0px;
+    margin: 30px 0px 15px 0px;
+    height: 40px;
 }
 
 .description {
@@ -16,7 +35,8 @@
     text-align: justify;
     text-align: center;
     font-size: 1.2rem;
-    padding: 20px 20px;
+    margin: 20px 20px;
+    height:30px;
 }
 
 .skillsContainer {
@@ -30,6 +50,7 @@
 .skill {
     width: 40%;
     margin-bottom: 20px;
+    height:20px;
 }
 
 .skillName {
@@ -38,10 +59,12 @@
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
+    height:20px;
 }
 
 .skillLevel {
     color: #ccc;
+    height:20px;
 }
 
 .progressBar {

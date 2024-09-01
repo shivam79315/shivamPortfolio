@@ -1,2 +1,7 @@
 @import './components/Education/education.module.css';
 @import './components/Introduction/introduction.module.css';
+
+body {
+    background: linear-gradient(135deg, #12100E, #2B4162);
+    background-repeat: no-repeat;
+}
