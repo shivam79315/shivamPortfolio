@@ -1,0 +1,126 @@
+* {
+    font-family: "Orbitron", sans-serif;
+}
+
+.nav {
+    background-color: linear-gradient(135deg, #009FC2, #0D0A0B);
+    height: 80px;
+    border-radius: 5px 0px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical alignment */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px 50px;
+    /* Removed rotate: 0deg; as it's not needed */
+}
+
+.title {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.right {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    position: relative; /* Important for positioning the dropdown */
+}
+
+.menuList {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menuList li {
+    color: #00ccff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.menuList li:hover {
+    color: #F6FB7A;
+    cursor: pointer;
+}
+
+.navLink {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+.navLink:visited,
+.navLink:hover {
+    color: inherit; 
+}
+
+.menuButton {
+    display: none;
+}
+
+@media (max-width: 1192px) {
+
+    .nav {
+        height: 60px;
+        border-radius: 10px 0px 0px 35px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .left img {
+        height: 60px;
+        width: 60px;
+        border-radius: 10px 35px;
+        margin-left: -20px;
+    }
+
+    .menuList {
+        display: block; 
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #162052;
+        width: 100%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 50px;
+        padding: 20px;
+        z-index: 1000; 
+    }
+
+    .menuButton {
+        display: block; 
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #00ccff;
+        cursor: pointer;
+    }
+
+    .menuList.open {
+        display: flex; 
+        width: auto;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .navLink {
+        padding: 10px 0;
+        text-align: right;
+    }
+}
