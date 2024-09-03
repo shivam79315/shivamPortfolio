@@ -1,5 +1,11 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 .homeContainer {
-    height: 2000px;
+    height: 2700px;
     background: linear-gradient(135deg, #12100E, #2B4162);
     background-repeat: no-repeat;
 }

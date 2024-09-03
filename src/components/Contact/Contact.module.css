@@ -1,0 +1,48 @@
+.footer {
+    margin-top:100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px 0px 15px 0px;
+    height: 40px;
+}
+
+.description {
+    color: #FFDC7F;
+    /* text-align: justify; */
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 20px;
+    height: 30px;
+}
+
+.contactInfo {
+    height: 100px;
+    padding:40px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:40px;
+}
+
+.contactInfo a {
+    text-decoration: none;
+    color: #FCDC94;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fa-solid {
+    color: #FCDC94;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
