@@ -17,14 +17,14 @@
 }
 
 .skillsSection {
-    margin:20px 0px;
+    margin:40px 0px;
 }
 
 .heading {
     color: #fff;
     font-size: 2rem;
     text-align: center;
-    margin: 30px 0px 15px 0px;
+    margin: 30px 0px 20px 0px;
     height: 40px;
 }
 
@@ -33,7 +33,7 @@
     text-align: justify;
     text-align: center;
     font-size: 1.2rem;
-    margin: 20px 20px;
+    margin: 25px 25px;
     height:30px;
 }
 
@@ -83,3 +83,26 @@
         width: 100%;
     }
 }
+
+@media (max-width: 480px) {
+    .skillsSection {
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+
+    .heading {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+    .description {
+        color: #fff;
+        text-align: justify;
+        text-align: center;
+        font-size: 0.7rem;
+        margin: 10px 25px;
+        height:15px;
+    }
+}
+
