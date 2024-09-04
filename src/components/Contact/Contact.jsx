@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./Contact.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationArrow, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { Hr } from "../HR/Hr";
 
 const Contact = () => {
   return (
     <>
+      <Hr />
       <footer className={styles.footer}>
         <h2 className={styles.heading}>Get in Touch</h2>
          <p className={styles.description}>

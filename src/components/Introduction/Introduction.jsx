@@ -1,6 +1,7 @@
 import React from "react";
 import resume from "../../assets/pdf/shivamResume.pdf";
 import profilePicture from "../../assets/images/profilePicture.png";
+import { Hr } from "../HR/Hr";
 
 const Introduction = () => {
   const handleDownload = () => {
@@ -50,6 +51,8 @@ const Introduction = () => {
           </ul>
         </div>
       </div>
+
+      <Hr />
     </>
   );
 };

@@ -1,0 +1,26 @@
+.hrContainer {
+    position: relative;
+    width: 20%;
+    margin: 60px auto;
+    height: auto;
+}
+
+.line {
+    border: 0;
+    height: 1px;
+    background-color: #39D1B4;
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.diamond {
+    width: 10px;
+    height: 10px;
+    background-color: #39D1B4;
+    border: 2px solid #39D1B4;
+    position: absolute;
+    top: -5px; /* Adjust based on hr line height */
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg); /* Center the diamond and rotate it */
+}

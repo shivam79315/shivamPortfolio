@@ -18,6 +18,7 @@
 
 .skillsSection {
     margin:40px 0px;
+    height: auto;
 }
 
 .heading {
@@ -43,6 +44,7 @@
     gap: 30px;
     justify-content: center;
     padding: 40px;
+    height: auto;
 }
 
 .skill {
