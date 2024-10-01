@@ -11,7 +11,6 @@ const Home = () => {
       <div className={styles.homeContainer}>
         <Nav />
         <Introduction />
-        <Skills />
         <Contact />
       </div>
     </>

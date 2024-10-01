@@ -1,0 +1,14 @@
+.head {
+    color: white;
+    height: 15px;
+    margin: 10px 0px;
+}
+
+.details {
+    font-size: 14px;
+    color:beige;
+    display: block;
+    text-align: center;
+    height: 20px;
+    margin: 25px 0px;
+}

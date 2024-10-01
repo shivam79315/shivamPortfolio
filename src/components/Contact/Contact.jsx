@@ -7,7 +7,6 @@ import { Hr } from "../HR/Hr";
 const Contact = () => {
   return (
     <>
-      <Hr />
       <footer className={styles.footer}>
         <h2 className={styles.heading}>Get in Touch</h2>
          <p className={styles.description}>
@@ -21,7 +20,7 @@ const Contact = () => {
           <a href="tel:+919805179315" className={styles.phone}>
           <FontAwesomeIcon icon={faPhone} /> &nbsp;9805179315
           </a>
-          <a className={styles.location}>
+          <a href="#" className={styles.location}>
           <FontAwesomeIcon icon={faLocationArrow} />&nbsp; Mohali
           </a>
         </div>

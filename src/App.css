@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #12100E, #2B4162);
+  background: linear-gradient(135deg, #12100E, #06062A);
   background-repeat: no-repeat;
   background-size: contain;
   font-family: "Orbitron", sans-serif;
@@ -16,4 +16,8 @@ body {
 
 .cgw_main_container {
   display: none;
+}
+
+.cgw_ext {
+  display: none !important;
 }

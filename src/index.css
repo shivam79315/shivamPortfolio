@@ -5,3 +5,12 @@ body {
     background: linear-gradient(135deg, #12100E, #2B4162);
     background-repeat: no-repeat;
 }
+
+.cgw-ext {
+    display: none !important;
+}
+
+.cgw_main_container {
+    display: none;
+  }
+  

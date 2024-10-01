@@ -1,71 +1,56 @@
-import React from 'react'
-
+import React from "react";
+import { Hr } from "../HR/Hr";
+import styles from "./education.module.css";
 
 const Education = () => {
   return (
     <>
-         <section id="education">
+      <Hr />
 
-<h1 class="section-heading mb75px">
-    <span>
-        <i class="fas fa-graduation-cap"></i>
-    </span>
-    <span> Education </span>
-</h1>
-
-<div class="timeline">
-
-    <div class="timeline-box left ">
-        <div class="timeline-container">
-            <div class="timeline-logo">
-                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png" />
-            </div>
-            <h3 class="experience-designation  m0 m-blue"> Degree </h3>
-            <h4 class="experience-company-name "> Institute Name </h4>
-            <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
-
-            <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+      <h2 className={`${styles.heading} text-center mb-5`}>Education</h2>
+      <div className={styles.educationCard}>
+        <div className={styles.scrollableContent}>
+          <p className={styles.years}>2018</p>
+          <h2 className={styles.title}>Matriculation in CBSE Board</h2>
+          <p className={styles.universityName}>SVM High School Chintpurni</p>
+          <p className={styles.description}>
+            I successfully completed my 10th grade under the CBSE board with an
+            overall score of 80%. My subjects included English, Hindi,
+            Mathematics, Science, Social Science, Sanskrit, and Computer
+            Science, providing a strong academic foundation across diverse
+            disciplines.
+          </p>
         </div>
-    </div>
-    
-    <div class="timeline-box right ">
-        <div class="timeline-container">
-            <div class="timeline-logo">
-                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png" />
-            </div>
-            <h3 class="experience-designation  m0 m-blue"> Degree </h3>
-            <h4 class="experience-company-name "> Institute Name </h4>
-            <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
-            <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <div className={styles.scrollableContent}>
+          <p className={styles.years}>2018-2020</p>
+          <h2 className={styles.title}>12th in HP Board</h2>
+          <p className={styles.universityName}>Govt. High School Bharwain</p>
+          <p className={styles.description}>
+            I completed my 12th grade in the Non-Medical stream under the CBSE
+            board with an overall score of 85%. My subjects included Physics,
+            Chemistry, Mathematics, English, and Computer Science, which
+            provided a strong foundation in analytical and technical skills,
+            preparing me for future studies in engineering and technology.
+          </p>
         </div>
-    </div>
-
-    <div class="timeline-box left ">
-        <div class="timeline-container">
-            <div class="timeline-logo">
-                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png" />
-            </div>
-            <h3 class="experience-designation  m0 m-blue"> Degree </h3>
-            <h4 class="experience-company-name "> Institute Name </h4>
-            <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
-
-            <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <div className={styles.scrollableContent}>
+          <p className={styles.years}>2020-2024</p>
+          <h2 className={styles.title}>B.Tech in CSE</h2>
+          <p className={styles.universityName}>IEC University Baddi</p>
+          <p className={styles.description}>
+            I completed my B.Tech in Computer Science and Engineering with a
+            CGPA of 8.5. During my studies, I gained a strong foundation in core
+            subjects like Data Structures, Algorithms, Database Management,
+            Operating Systems, and Web Development. This academic journey
+            equipped me with both theoretical knowledge and practical skills,
+            preparing me for a career in software development and technology.
+          </p>
         </div>
-    </div>
-    
-    <div id="timeline-divider">
-        <div class="timeline-traveller">
-            <div>
-                <i class="fas fa-car-side"></i>
-            </div>
-        </div>
-    </div>
+      </div>
 
-</div>
-
-</section>
+      <Hr />
     </>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;

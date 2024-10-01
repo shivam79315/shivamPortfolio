@@ -68,16 +68,16 @@
 }
 
 .progressBar {
-    background-color: #333;
+    background-color: rgb(238, 238, 238);
     border-radius: 10px;
     overflow: hidden;
-    height: 20px;
+    height: 3px;
 }
 
 .progress {
     height: 100%;
-    background-color: #4CAF50;
-    border-radius: 10px;
+    background-color: rgb(73, 220, 135);
+    height:3px;
 }
 
 @media (max-width: 768px) {
@@ -103,8 +103,8 @@
         text-align: justify;
         text-align: center;
         font-size: 0.7rem;
-        margin: 10px 25px;
-        height:15px;
+        margin: 0;
+        height:auto;
     }
 }
 

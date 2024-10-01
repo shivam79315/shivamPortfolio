@@ -1,12 +1,9 @@
 .footer {
-    margin-top:100px;
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     background-color: black;
     overflow: hidden;
-    /* margin: 250px 0px; */
 }
 
 .heading {
@@ -19,16 +16,15 @@
 
 .description {
     color: #FFDC7F;
-    /* text-align: justify; */
     text-align: center;
     font-size: 1.2rem;
     margin: 20px 20px;
-    height: 30px;
+    height: auto;
 }
 
 .contactInfo {
-    height: 100px;
-    padding:40px 0px;
+    height: 70px;
+    padding:25px 0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -37,18 +33,24 @@
 
 .contactInfo a {
     text-decoration: none;
-    color: #FCDC94;
+    color: beige;
     font-size: 1.2rem;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
     height: auto;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .fa-solid {
-    color: #FCDC94;
+    color: beige;
     font-size: 1.2rem;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.contactInfo a:hover {
+    color:#FFDC7F;
+    transform: scale(1.2);
 }
 
 @media (max-width: 480px) {
@@ -58,7 +60,11 @@
 
     .description {
         font-size: 1rem;
-        margin: 0px 20px;
+    }
+
+    .contactInfo {
+        padding:0px;
+        gap:15px;
     }
 
 }
