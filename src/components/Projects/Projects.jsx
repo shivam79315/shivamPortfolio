@@ -4,6 +4,7 @@ import { Hr } from "../HR/Hr";
 import movieImg from '../../assets/images/movieFlix.webp';
 import portfolioImg from '../../assets/images/portfolio.webp';
 import expenseTrackerImg from '../../assets/images/ExpenseTrackerImg.webp';
+import photoFolioImg from '../../assets/images/photofolio.webp';
 import projectSampleImage from '../../assets/images/projectImageSample.jpg'
 
 const projectList = [
@@ -21,6 +22,11 @@ const projectList = [
     title: "_",
     image: movieImg,
     url: "https://imdb-clone-ten-blond.vercel.app/",
+  },
+  {
+    title: "_",
+    image: photoFolioImg,
+    url: "https://photofolio-fawn.vercel.app/",
   },
 ];
 
