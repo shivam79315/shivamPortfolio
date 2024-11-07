@@ -10,6 +10,11 @@ import projectSampleImage from '../../assets/images/projectImageSample.jpg'
 const projectList = [
   {
     title: "_",
+    image: photoFolioImg,
+    url: "https://photofolio-fawn.vercel.app/",
+  },
+  {
+    title: "_",
     image: portfolioImg,
     url: "https://shivam-portfolio-flame.vercel.app/",
   },
@@ -22,11 +27,6 @@ const projectList = [
     title: "_",
     image: movieImg,
     url: "https://imdb-clone-ten-blond.vercel.app/",
-  },
-  {
-    title: "_",
-    image: photoFolioImg,
-    url: "https://photofolio-fawn.vercel.app/",
   },
 ];
 
