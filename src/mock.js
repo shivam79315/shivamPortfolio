@@ -97,26 +97,26 @@ export const personalInfo = {
       title: "E-Commerce Platform",
       description: "Full-featured online store with payment integration, inventory management, and admin dashboard.",
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-      tech: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/yourusername/ecommerce",
+      tech: ["React.js", "Firebase"],
+      github: "https://github.com/shivam79315/busy-busy",
       live: "https://busy-busy-git-main-shivams-projects-1802b251.vercel.app/"
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Photofolio",
       description: "Collaborative project management tool with real-time updates, team chat, and task tracking.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
       tech: ["React", "Express", "Socket.io", "PostgreSQL"],
-      github: "https://github.com/yourusername/taskmanager",
-      live: "https://demo-tasks.com"
+      github: "https://github.com/shivam79315/Photofolio",
+      live: "https://photofolio-fawn.vercel.app/"
     },
     {
       id: 3,
-      title: "Corporate WordPress Site",
+      title: "Movieflix",
       description: "Custom WordPress theme with advanced features, SEO optimization, and performance enhancements.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      tech: ["WordPress", "PHP", "MySQL", "JavaScript"],
-      github: "https://github.com/yourusername/corporate-wp",
-      live: "https://demo-corporate.com"
+      tech: ["React", "Node.js", "MongoDB", "JavaScript"],
+      github: "https://github.com/shivam79315/Movie_flix",
+      live: "https://github.com/shivam79315/Movie_flix"
     },
   ];
