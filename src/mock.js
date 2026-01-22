@@ -11,7 +11,7 @@ export const personalInfo = {
     resumeUrl: "https://ninjasfiles.s3.amazonaws.com/shivamResume.pdf_00ac29d60daef911b77be0ee5b7c9536/shivamResume.pdf",
     social: {
       github: "https://github.com/shivam79315",
-      linkedin: "https://linkedin.com/in/shivam-shivam-83a880232",",
+      linkedin: "https://linkedin.com/in/shivam-shivam-83a880232",
     }
   };
   
