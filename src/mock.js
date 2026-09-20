@@ -2,6 +2,7 @@
 import { icons } from "./assets";
 
 export const personalInfo = {
+    greeting: "Hello, I'm",
     name: "Shivam",
     title: "Full Stack Web Developer",
     tagline: "React • Node.js • Next.js • Freelancer",
@@ -14,7 +15,14 @@ export const personalInfo = {
       linkedin: "https://linkedin.com/in/shivam-shivam-83a880232",
     }
   };
-  
+
+  export const heroStats = [
+    { id: "experience", value: "1+", label: "Years Experience" },
+    { id: "projects", value: "10+", label: "Projects Completed" },
+    { id: "clients", value: "Happy Clients", label: "Freelance & Organizations" },
+    { id: "education", value: "B.Tech", label: "Computer Science" },
+  ];
+
   export const skills = [
     { 
       category: "Frontend", 

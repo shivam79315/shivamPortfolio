@@ -5,57 +5,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { Badge } from '../components/ui/badge';
 import { personalInfo, skills, experience, projects } from '../mock';
 import profile_streak from "../assets/profile_streak.png";
+import Hero from '../components/Hero/Hero';
 
 const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-6 tracking-tight">
-              {personalInfo.name}
-            </h1>
-            <p className="text-2xl md:text-3xl text-gray-600 mb-6 font-light">
-              {personalInfo.title}
-            </p>
-            <p className="text-lg text-gray-500 mb-4">
-              {personalInfo.tagline}
-            </p>
-            <p className="text-base text-gray-600 mb-8 max-w-2xl leading-relaxed">
-              {personalInfo.bio}
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button
-                size="lg"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Get In Touch
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                View Projects
-              </Button>
-            </div>
-            {/* Social Links */}
-            <div className="flex space-x-4 mt-8">
-              <a href={personalInfo.social.github} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
-                <Github size={24} />
-              </a>
-              <a href={personalInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
-                <Linkedin size={24} />
-              </a>
-              <a href={`mailto:${personalInfo.email}`} className="text-gray-600 hover:text-gray-900 transition-colors">
-                <Mail size={24} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* About / Skills Section */}
       <section id="skills" className="py-20 px-6 lg:px-8 bg-gradient-to-b from-blue-50 to-white">

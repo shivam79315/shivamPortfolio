@@ -82,6 +82,15 @@ code {
     }
 }
 
+@keyframes hero-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
 @layer base {
     [data-debug-wrapper="true"] {
         display: contents !important;
