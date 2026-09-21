@@ -4,8 +4,8 @@ import { icons } from "./assets";
 export const personalInfo = {
     greeting: "Hello, I'm",
     name: "Shivam",
-    title: "Full Stack Web Developer",
-    tagline: "React • Node.js • Next.js • Freelancer",
+    title: "I Build Web Products From Idea to Production.",
+    tagline: "Full-Stack Web Developer · 3+ Years Experience",
     bio: "Passionate full-stack developer specializing in modern web technologies. I build scalable, performant applications with clean code and exceptional user experiences. Available for freelance projects and full-time opportunities.",
     email: "shivamsahotra3@gmail.com",
     location: "Mohali, Punjab",

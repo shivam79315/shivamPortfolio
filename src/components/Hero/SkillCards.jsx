@@ -82,12 +82,10 @@ const SkillCard = ({ icon, title, position }) => {
   );
 };
 
-const SkillCards = ({ tier }) => {
-  const cards = tier === 'tablet' ? CARDS.slice(0, 3) : CARDS;
-
+const SkillCards = () => {
   return (
     <group>
-      {cards.map((card) => (
+      {CARDS.map((card) => (
         <SkillCard key={card.id} icon={card.icon} title={card.title} position={card.position} />
       ))}
     </group>

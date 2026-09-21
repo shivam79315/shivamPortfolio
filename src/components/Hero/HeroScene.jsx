@@ -84,7 +84,7 @@ const HeroScene = ({ pointerRef, parallaxEnabled, reduceMotion, tier, onReady })
     >
       <Canvas
         shadows
-        dpr={tier === 'desktop' ? [1, 3] : [1, 2]}
+        dpr={tier === 'desktop' ? [1, 3] : tier === 'mobile' ? [1, 1.5] : [1, 2]}
         camera={{ fov: 35, position: [2.6, 1.4, 5.4] }}
         onCreated={() => onReady?.()}
         gl={{ antialias: true }}
@@ -116,7 +116,7 @@ const HeroScene = ({ pointerRef, parallaxEnabled, reduceMotion, tier, onReady })
           isDraggingRef={isDraggingRef}
         >
           <Workspace />
-          <SkillCards tier={tier} />
+          <SkillCards />
         </ParallaxGroup>
 
         <ContactShadows

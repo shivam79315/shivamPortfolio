@@ -1,13 +1,12 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Send, FolderOpen } from 'lucide-react';
 import { Button } from '../ui/button';
 import { personalInfo } from '../../mock';
-import HeroStats from './HeroStats';
 
 const socialLinks = [
-  { id: 'github', href: personalInfo.social.github, icon: Github, label: 'GitHub' },
-  { id: 'linkedin', href: personalInfo.social.linkedin, icon: Linkedin, label: 'LinkedIn' },
-  { id: 'mail', href: `mailto:${personalInfo.email}`, icon: Mail, label: 'Email' },
+  { id: 'github', href: personalInfo.social.github, src: '/github.png', label: 'GitHub' },
+  { id: 'linkedin', href: personalInfo.social.linkedin, src: '/linkedin.png', label: 'LinkedIn' },
+  { id: 'mail', href: `mailto:${personalInfo.email}`, src: '/gmail.png', label: 'Email' },
 ];
 
 const scrollToId = (id) => {
@@ -16,40 +15,37 @@ const scrollToId = (id) => {
 
 const HeroContent = () => {
   return (
-    <div>
+    <div className="max-w-[560px] mx-auto lg:mx-0">
       <span
         data-hero-anim
-        className="inline-block bg-white/60 backdrop-blur border border-blue-100 rounded-full px-4 py-1.5 text-sm font-medium text-blue-700 shadow-sm"
+        className="inline-flex items-center gap-1.5 bg-white/80 backdrop-blur border border-blue-100 rounded-full px-3.5 py-1.5 text-sm font-medium text-blue-600 shadow-sm"
       >
-        👋 {personalInfo.greeting}
+        <span aria-hidden="true">👋</span> {personalInfo.greeting}
       </span>
 
       <h1
         data-hero-anim
-        className="mt-6 text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 tracking-tight"
+        className="mt-5 text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-[0.95] tracking-tight"
       >
         {personalInfo.name}
       </h1>
 
-      <p data-hero-anim className="mt-4 text-2xl md:text-3xl font-light text-blue-600">
+      <p data-hero-anim className="mt-2 text-2xl sm:text-3xl font-bold text-blue-600 tracking-tight">
         {personalInfo.title}
       </p>
 
-      <p data-hero-anim className="mt-4 text-base text-gray-500">
+      <p data-hero-anim className="mt-3 text-sm sm:text-base font-normal text-slate-500">
         {personalInfo.tagline}
-      </p>
-
-      <p data-hero-anim className="mt-4 max-w-xl mx-auto lg:mx-0 text-base text-gray-600 leading-relaxed">
-        {personalInfo.bio}
       </p>
 
       <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
         <span data-hero-anim>
           <Button
             size="lg"
-            className="transition-transform hover:scale-[1.03] active:scale-[0.98]"
+            className="h-12 px-6 rounded-xl text-base font-semibold shadow-md shadow-blue-600/20 transition-transform hover:scale-[1.03] active:scale-[0.98]"
             onClick={() => scrollToId('contact')}
           >
+            <Send size={18} />
             Get In Touch
           </Button>
         </span>
@@ -57,31 +53,34 @@ const HeroContent = () => {
           <Button
             size="lg"
             variant="outline"
-            className="transition-transform hover:scale-[1.03] active:scale-[0.98]"
+            className="h-12 px-6 rounded-xl text-base font-semibold bg-white text-gray-900 border-gray-200 shadow-sm transition-transform hover:scale-[1.03] active:scale-[0.98]"
             onClick={() => scrollToId('projects')}
           >
+            <FolderOpen size={18} />
             View Projects
           </Button>
         </span>
       </div>
 
-      <div className="mt-8 flex justify-center lg:justify-start space-x-4">
-        {socialLinks.map(({ id, href, icon: Icon, label }) => (
+      <div className="mt-8 flex justify-center lg:justify-start items-center gap-4">
+        {socialLinks.map(({ id, href, src, label }) => (
           <span key={id} data-hero-anim className="inline-block">
             <a
               href={href}
               target={id === 'mail' ? undefined : '_blank'}
               rel={id === 'mail' ? undefined : 'noopener noreferrer'}
               aria-label={label}
-              className="text-gray-600 hover:text-blue-600 transition-all hover:-translate-y-0.5"
+              className="block w-11 h-11 rounded-xl overflow-hidden transition-transform hover:-translate-y-0.5 hover:scale-105"
             >
-              <Icon size={24} />
+              <img
+                src={src}
+                alt={label}
+                className="w-full h-full object-cover scale-[1.45]"
+              />
             </a>
           </span>
         ))}
       </div>
-
-      <HeroStats />
     </div>
   );
 };

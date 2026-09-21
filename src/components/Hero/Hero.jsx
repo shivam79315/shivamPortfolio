@@ -63,10 +63,8 @@ const Hero = () => {
 
   useHeroEntrance({ contentRef, sceneWrapRef, sceneReady, reduceMotion });
 
-  const showScene = tier !== 'mobile';
-
   return (
-    <section id="hero" className="relative overflow-hidden pt-28 md:pt-32 pb-16 md:pb-24 px-6 lg:px-8">
+    <section id="hero" className="relative overflow-hidden pt-28 md:pt-32 pb-16 md:pb-24">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-50 via-white to-white" />
         <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-blue-200/40 blur-3xl" />
@@ -76,9 +74,9 @@ const Hero = () => {
         <div className="absolute top-0 inset-x-0 h-24 md:h-28 bg-gradient-to-b from-white via-white/80 to-transparent" />
       </div>
 
-      <div className="relative max-w-[90rem] mx-auto">
+      <div className="relative max-w-[90rem] mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center min-h-[70vh] lg:min-h-[80vh]">
-          <div ref={contentRef} className="lg:col-span-5 order-1 text-center lg:text-left">
+          <div ref={contentRef} className="lg:col-span-5 order-1 text-center lg:text-left lg:pl-10 xl:pl-20 lg:-translate-y-12">
             <HeroContent />
           </div>
 
@@ -118,21 +116,17 @@ const Hero = () => {
                 }}
               />
             </div>
-            {showScene ? (
-              <div ref={sceneWrapRef} className="w-full h-full" style={{ opacity: 0, transform: 'scale(0.95)' }}>
-                <Suspense fallback={<HeroCanvasFallback />}>
-                  <HeroScene
-                    pointerRef={pointerRef}
-                    parallaxEnabled={parallaxEnabled}
-                    reduceMotion={reduceMotion}
-                    tier={tier}
-                    onReady={() => setSceneReady(true)}
-                  />
-                </Suspense>
-              </div>
-            ) : (
-              <HeroCanvasFallback />
-            )}
+            <div ref={sceneWrapRef} className="w-full h-full" style={{ opacity: 0, transform: 'scale(0.95)' }}>
+              <Suspense fallback={<HeroCanvasFallback />}>
+                <HeroScene
+                  pointerRef={pointerRef}
+                  parallaxEnabled={parallaxEnabled}
+                  reduceMotion={reduceMotion}
+                  tier={tier}
+                  onReady={() => setSceneReady(true)}
+                />
+              </Suspense>
+            </div>
           </div>
         </div>
       </div>
