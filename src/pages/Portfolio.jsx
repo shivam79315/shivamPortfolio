@@ -18,7 +18,9 @@ const Portfolio = () => {
       <section id="skills" className="py-20 px-6 lg:px-8 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">Skills & Expertise</h2>
+            <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-4">
+              Skills & <span className="text-blue-600">Expertise</span>
+            </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Proficient in modern technologies and frameworks for building exceptional web applications
             </p>
@@ -67,7 +69,9 @@ const Portfolio = () => {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 lg:px-8 bg-gradient-to-b from-white to-blue-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-light text-gray-900 mb-4">Featured Projects</h2>
+          <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-4">
+            Featured <span className="text-blue-600">Projects</span>
+          </h2>
           <p className="text-gray-600 mb-12 max-w-2xl">A selection of projects showcasing my skills in full-stack development, from e-commerce platforms to custom WordPress solutions.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
@@ -118,7 +122,7 @@ const Portfolio = () => {
       <section className="py-20 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl text-center font-bold text-gray-900 mb-12">
-            Naukri.com Streak
+            Problem Solving Streak
           </h2>
 
           <div className="flex flex-col items-center gap-6">
@@ -148,7 +152,9 @@ const Portfolio = () => {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 lg:px-8 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-light text-gray-900 text-center mb-4">Get In Touch</h2>
+          <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 text-center mb-4">
+            Get In <span className="text-blue-600">Touch</span>
+          </h2>
           <p className="text-center text-gray-600 mb-12">Have a project in mind or want to collaborate? Feel free to reach out!</p>
           <div className="grid grid-cols-1 place-items-center w-full">
 
