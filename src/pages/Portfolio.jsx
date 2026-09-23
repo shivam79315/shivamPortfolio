@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, MapPin, Phone, Send, Code2, Server, Database, CheckCircle2 } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, MapPin, Phone, Send, Code2, Server, Database } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { personalInfo, skills, experience, projects } from '../mock';
+import { personalInfo, skills, projects } from '../mock';
 import profile_streak from "../assets/profile_streak.png";
 import Hero from '../components/Hero/Hero';
+import Experience from '../components/Experience/Experience';
 
 const Portfolio = () => {
 
@@ -61,39 +62,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="experience" className="py-20 px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-light text-gray-900 mb-12">Experience</h2>
-          <div className="space-y-8">
-            {experience.map((job) => (
-              <Card key={job.id} className="border-l-4 border-l-blue-600 shadow-md hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <CardTitle className="text-xl">{job.role}</CardTitle>
-                      <CardDescription className="text-base mt-1">
-                        {job.company} • {job.period}
-                      </CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">{job.description}</p>
-                  <ul className="space-y-2">
-                    {job.achievements.map((achievement, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
-                        <CheckCircle2 className="w-4 h-4 mt-0.5 text-blue-600 flex-shrink-0" />
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Experience />
 
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 lg:px-8 bg-gradient-to-b from-white to-blue-50">

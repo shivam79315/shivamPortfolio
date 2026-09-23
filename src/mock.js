@@ -1,5 +1,6 @@
 // Mock data for portfolio website
 import { icons } from "./assets";
+import ecommerceImage from "./assets/images/ecommerce.png";
 
 export const personalInfo = {
     greeting: "Hello, I'm",
@@ -73,28 +74,85 @@ export const personalInfo = {
   export const experience = [
     {
       id: 1,
-      role: "MERN Stack Developer",
-      company: "Meander Software Solutions Pvt. Ltd.",
-      period: "Jan 2024 - June 2024",
-      description: "Developed and maintained full-stack web applications for global clients using the MERN stack, with a focus on performance, scalability, and clean code.",
+      type: "work",
+      role: "Full Stack Developer",
+      company: "Suntech Infra Solutions Limited",
+      location: "Mohali, Punjab",
+      period: "Jul 2026 - Present",
+      dateTop: "Jul 2026",
+      dateBottom: "- Present",
+      duration: "3+ Months",
+      current: true,
+      techs: ["Python", "FastAPI", "Next.js", "React Native", "PostgreSQL", "DigitalOcean", "CI/CD"],
+      summary: "Building a full-scale ERP platform covering finance, billing, construction operations, and business process management across multiple modules.",
       achievements: [
-        "Designed and developed end-to-end MERN stack applications",
-        "Integrated frontend components with backend services and databases",
-        "Built and tested RESTful APIs using Node.js and Express"
+        "Developed backend services using Python and FastAPI, implementing 50+ APIs for business logic.",
+        "Designed and developed 10+ responsive Next.js dashboards and interfaces.",
+        "Built a cross-platform React Native mobile application with offline-first architecture.",
+        "Implemented data synchronization between web and mobile applications.",
+        "Managed production infrastructure using DigitalOcean and VPS environments.",
+        "Implemented CI/CD pipelines for automated deployments."
       ]
     },
     {
       id: 2,
+      type: "work",
       role: "Full Stack Developer",
-      company: "CodeSapient Technologies LLP",
-      period: "August 2024 - Current",
-      description: "Developing and maintaining scalable full-stack web applications for multiple clients using React, Node.js, and Laravel, with a strong focus on performance, security, and maintainability.",
+      company: "Codesapient Labs Pvt. Ltd.",
+      location: "Mohali, Punjab",
+      period: "Nov 2024 - Jun 2026",
+      dateTop: "Nov 2024",
+      dateBottom: "- Jun 2026",
+      duration: "1 Yr 7 Mo",
+      current: false,
+      techs: ["Node.js", "Laravel", "Next.js", "Stripe", "DigitalOcean", "CI/CD"],
+      summary: "Built lead funnels, automated workflows, and integrated payment systems to streamline customer onboarding.",
       achievements: [
-        "Developed dynamic and responsive user interfaces using React and modern JavaScript",
-        "Built and integrated RESTful APIs using Node.js and Laravel",
-        "Worked with MongoDB, SQL, and Firebase for data storage and real-time features",
-        "Containerized applications and supported deployments using Docker",
-        "Collaborated closely with designers, backend engineers, and product teams"
+        "Built 10+ lead funnels and automated registration workflows using ActiveCampaign and GoHighLevel.",
+        "Developed 20+ REST API endpoints using Node.js and Laravel.",
+        "Integrated Stripe payment workflows for checkout, subscriptions, and webhooks.",
+        "Built 10+ webhook-driven integrations for real-time data sync across systems.",
+        "Developed an AI-powered RAG chatbot for automated website support.",
+        "Managed deployments and CI/CD pipelines across DigitalOcean and VPS environments."
+      ]
+    },
+    {
+      id: 3,
+      type: "work",
+      role: "MERN Stack Developer",
+      company: "Meander Software Solutions Pvt. Ltd.",
+      location: "Ahmedabad, India",
+      period: "Jan 2024 - Jun 2024",
+      dateTop: "Jan 2024",
+      dateBottom: "- Jun 2024",
+      duration: "6 Months",
+      current: false,
+      techs: ["MongoDB", "Express.js", "React", "Node.js", "JavaScript"],
+      summary: "Developed and maintained full-stack web applications for global clients using the MERN stack.",
+      achievements: [
+        "Designed and developed end-to-end MERN stack applications.",
+        "Built and integrated RESTful APIs using Node.js and Express.",
+        "Worked with MongoDB, React, Node.js, and modern JavaScript.",
+        "Collaborated with designers, backend engineers, and product teams."
+      ]
+    },
+    {
+      id: 4,
+      type: "education",
+      role: "B.Tech - Computer Science",
+      company: "IEC University",
+      location: "India",
+      period: "Jun 2020 - Jun 2024",
+      dateTop: "2021",
+      dateBottom: "- 2024",
+      duration: "4 Years",
+      current: false,
+      techs: ["Data Structures", "Algorithms", "Web Technologies", "DBMS"],
+      summary: "Built a strong foundation in computer science fundamentals through coursework and personal projects.",
+      achievements: [
+        "Worked on academic and personal projects.",
+        "Developed problem-solving and analytical skills.",
+        "Explored web development and modern technologies."
       ]
     }
   ];
@@ -104,10 +162,10 @@ export const personalInfo = {
       id: 1,
       title: "E-Commerce Platform",
       description: "Full-featured online store with payment integration, inventory management, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+      image: ecommerceImage,
       tech: ["React.js", "Firebase"],
       github: "https://github.com/shivam79315/busy-busy",
-      live: "https://busy-busy-git-main-shivams-projects-1802b251.vercel.app/"
+      live: "https://busy-busy-new.vercel.app/"
     },
     {
       id: 2,
